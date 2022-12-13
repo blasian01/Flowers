@@ -1,3 +1,5 @@
+using System;
+
 class Program
 {
     static void Main(string[] args)
@@ -183,31 +185,31 @@ class Program
         {
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine();
-            System.Console.Write("Enter a letter part of your name (Qwert) (quit = ESC): ");
+            System.Console.Write("Enter a letter part of your name (quit = ESC): ");
             key = System.Console.ReadKey(true);
 
             switch (key.Key)
             {
-                case ConsoleKey.Q:
+                case ConsoleKey.N:
                     System.Console.ForegroundColor = ConsoleColor.Red;
                     System.Console.WriteLine(flower1);
                     break;
-                case ConsoleKey.W:
+                case ConsoleKey.I:
                     System.Console.ForegroundColor = ConsoleColor.Blue;
                     System.Console.WriteLine(flower2);
                     break;
 
-                case ConsoleKey.E:
+                case ConsoleKey.A:
                     System.Console.ForegroundColor = ConsoleColor.DarkYellow;
                     System.Console.WriteLine(flower3);
                     break;
 
-                case ConsoleKey.R:
+                case ConsoleKey.B:
                     System.Console.ForegroundColor = ConsoleColor.DarkCyan;
                     System.Console.WriteLine(flower4);
                     break;
 
-                case ConsoleKey.T:
+                case ConsoleKey.W:
                     System.Console.ForegroundColor = ConsoleColor.DarkGray;
                     System.Console.WriteLine(flower5);
                     break;
